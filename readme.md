@@ -133,4 +133,11 @@ age int
 - Show all staff 
 
 
+### TASK 2
+- Inside Bank Database
+- CREATE TABLE Customers (id, name, balance)
+- Insert 5 Customers
+- Find Customer Name With High Balance
+
+
 
