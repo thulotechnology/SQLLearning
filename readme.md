@@ -84,6 +84,7 @@ colname datatype,
 colname datatype
 );
 
+```
 CREATE TABLE person(
 id int PRIMARY KEY AUTO_INCREMENT,
 name VARCHAR(100),
@@ -93,7 +94,7 @@ email VARCHAR(150),
 country VARCHAR(75),
 age int
 );
-
+```
 
 ### SQL WITH DATA
 
