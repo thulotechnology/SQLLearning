@@ -138,6 +138,16 @@ age int
 - CREATE TABLE Customers (id, name, balance)
 - Insert 5 Customers
 - Find Customer Name With High Balance
+- [ANS] SELECT * FROM customers WHERE balance = (SELECT MAX(balance) FROM customers)
 
+### How to Delete Table
+- DROP TABLE tablename;
+- E.g DROP TABLE customer;
+
+### How to Insert Data Into Table
+- INSERT INTO tablename(column1, column2, column3) VALUES ('val', 'val2', 'val3');
+- E.g. INSERT INTO customers(name, balance) VALUES ('Raj', 5002.6);
+
+- SELECT country, COUNT(*) FROM person GROUP BY country;
 
 
