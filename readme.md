@@ -176,7 +176,9 @@ Important Note: Always Write Where Condition.
 - ALTER TABLE customers ADD COLUMN description varchar(100);
 
 ### How to DELETE Data
-Syntax: DELETE FROM table WHERE condition;
+ ```
+DELETE FROM table WHERE condition;
+```
 Important Note: Always Write Where Condition.
 - DELETE FROM person WHERE id = 7;
 
@@ -230,3 +232,10 @@ This will update description of customer having id 8.
 UPDATE customers SET description = 'High Potential Customer' WHERE id = 8;
 ```
 
+### DELETE Specific Customer
+DROP is used in database, table
+DELETE is used in table data.
+This will delete information of customer having id 8.
+```
+DELETE FROM customers WHERE id = 8;
+```
