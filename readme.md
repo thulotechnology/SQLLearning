@@ -225,5 +225,8 @@ INSERT INTO customers(name, address, phone, income, description) VALUES ('Sudeep
 ```
 
 ### Update Description of Specific ID
-
+This will update description of customer having id 8.
+```
+UPDATE customers SET description = 'High Potential Customer' WHERE id = 8;
+```
 
