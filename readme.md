@@ -161,7 +161,7 @@ It is used to sort data in ascending / decending order.
 
 ### How to Update Table Data
 ```
-UPDATE tablename SET col1='val1', col2 = 'val2', col3 = 'val3' WHERE id = id;
+UPDATE tablename SET col1='val1', col2 = 'val2', col3 = 'val3' WHERE condition;
 ```
 Important Note: Always Write Where Condition.
 - If you don't write where condition all data will be updated.
