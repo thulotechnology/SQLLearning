@@ -196,6 +196,20 @@ NOT - ! or <>
 ```
 CREATE DATABASE salesforce;
 ```
+### Create Table custumers
+- id, name, address, phone, income, description
+```
+CREATE TABLE customers(
+id int AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100) NOT NULL,
+address VARCHAR(100) NOT NULL,
+phone bigint NOT NULL,
+income decimal(13,2),
+description TEXT     
+);
+
+```
+
 
 
 
