@@ -239,3 +239,56 @@ This will delete information of customer having id 8.
 ```
 DELETE FROM customers WHERE id = 8;
 ```
+
+### To View Specific Column
+This will show name and income of customers.
+```
+SELECT name, income FROM customers;
+```
+
+### Sort Data In Ascending Order By Name
+```
+SELECT * FROM customers ORDER BY name;
+```
+
+
+### NULL and Empty
+- NULL and 0 are different
+- NULL and space are different
+- In NULL data contains word NULL
+- Empty means '' 
+- To check NULL you must use IS NULL or IS NOT NULL
+- To check empty you can use =''
+
+```
+SELECT * FROM customers WHERE description = '';
+SELECT * FROM customers WHERE description IS NULL;
+SELECT * FROM customers WHERE description IS NOT NULL;
+```
+
+### Between
+- It shows data between two values
+```
+SELECT columnname FROM tablename WHERE condition BETWEEN value1 AND value2;
+SELECT * FROM customers WHERE id BETWEEN 2 and 7;
+SELECT * FROM customers WHERE name BETWEEN 'a' and 'f';
+```
+
+### SQL Aliases
+- It is used to give custom table name, column name.
+- It is temporary name
+- AS keyword is used in aliases
+
+```
+SELECT columnname AS aliasname FROM tablename; 
+SELECT name AS 'Full Name' FROM customers;
+SELECT name AS 'Name', address AS 'Address' FROM customers;
+
+```
+
+### TASK
+- CREATE DATABASE contactbook
+- CREATE TABLE contacts [id, name, phone1, phone2, phone3, phone4]
+- Insert 10 data
+- Show all data
+[7 Min]
