@@ -204,6 +204,11 @@ ALTER TABLE tablename ADD COLUMN  columnname datatype;
 ALTER TABLE customers ADD COLUMN description varchar(100);
 ```
 
+### Delete Column to Table
+```
+ALTER TABLE tablename DROP COLUMN  columnname;
+```
+
 ### How to DELETE Data
 ```
 DELETE FROM table WHERE condition;
