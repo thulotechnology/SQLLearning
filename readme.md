@@ -31,31 +31,45 @@ Note: SQL is not case sensitive. A and a are same.
 3. Start Mysql and Apache.
 
 ### How to Create Database
+```
 - CREATE DATABASE DatabaseName;
+```
 
 ### How to Delete Database
-- DROP DATABASE DatabaseName;
+```
+DROP DATABASE DatabaseName;
+```
 
 ### How to View Database
-- SHOW DATABASES;
+```
+SHOW DATABASES;
+```
 
 ### How to Use Database
-- USE DatabaseName;
-
+```
+USE DatabaseName;
+```
 
 ### WRITE SQL Query to Create and Delete Database called "school."
 
 ### TO Create:
+```
 CREATE DATABASE school;
+```
 
 ### To Delete:
+```
 DROP DATABASE school;
+```
 
 ### To View All Databases
+```
 SHOW DATABASES;
-
+```
 ### To Use Database
+```
 USE DatabaseName;
+```
 
 ### Why Database 
 - Store Billions of data without any conflict.
@@ -78,11 +92,13 @@ at the same time.
 ### How to Create Table
 Syntax:
 
+```
 CREATE TABLE TABLENAME(
 colname datatype,
 colname datatype,
 colname datatype
 );
+```
 
 ```
 CREATE TABLE person(
@@ -99,32 +115,40 @@ age int
 ### SQL WITH DATA
 
 ### TO View All Data
+```
 - SELECT * FROM tablename;
 - E.g SELECT * FROM person;
+```
 
 ### To View All Data With Condition
-- SELECT * FROM tablename WHERE condition;
-- E.g SELECT * FROM person WHERE country = 'USA';
+```
+SELECT * FROM tablename WHERE condition;
+E.g SELECT * FROM person WHERE country = 'USA';
+```
 
 ## Find Max / Min / Avg / Count Value [Must Be Numeric Value]
-- SELECT Functionname(colname) FROM TABLENAME
-- SELECT MAX(age) FROM person;
-- SELECT MIN(age) FROM person;
-- SELECT AVG(age) FROM person;
-- SELECT COUNT(age) FROM person;
-
+```
+SELECT Functionname(colname) FROM TABLENAME
+SELECT MAX(age) FROM person;
+SELECT MIN(age) FROM person;
+SELECT AVG(age) FROM person;
+SELECT COUNT(age) FROM person;
+```
 
 ### Find Only Different Value
-- SELECT DISTINCT(colname) FROM TABLENAME;
-- E.g SELECT DISTINCT(country) FROM person;
-
+```
+SELECT DISTINCT(colname) FROM TABLENAME;
+E.g SELECT DISTINCT(country) FROM person;
+```
 
 ### Some Queries
-- SELECT * FROM person WHERE country IN ('Nepal', 'India');
-- SELECT * FROM person WHERE country != 'India';
-- SELECT * FROM person WHERE country NOT IN ('India', 'USA');
-- SELECT * FROM person WHERE age>19 and age <28;
-- SELECT * FROM person WHERE age BETWEEN 20 AND 27; -- 20 and 27 are included
+```
+SELECT * FROM person WHERE country IN ('Nepal', 'India');
+SELECT * FROM person WHERE country != 'India';
+SELECT * FROM person WHERE country NOT IN ('India', 'USA');
+SELECT * FROM person WHERE age>19 and age <28;
+SELECT * FROM person WHERE age BETWEEN 20 AND 27; -- 20 and 27 are included
+```
 
 ### TASK
 - CREATE DATABASE bank
@@ -141,8 +165,10 @@ age int
 - [ANS] SELECT * FROM customers WHERE balance = (SELECT MAX(balance) FROM customers)
 
 ### How to Delete Table
-- DROP TABLE tablename;
-- E.g DROP TABLE customer;
+```
+DROP TABLE tablename;
+E.g DROP TABLE customer;
+```
 
 ### How to Insert Data Into Table
 ```
@@ -155,9 +181,10 @@ INSERT INTO tablename(column1, column2, column3) VALUES ('val', 'val2', 'val3');
 
 ### ORDER BY
 It is used to sort data in ascending / decending order.
-- SELECT * FROM customers ORDER BY balance;
-- SELECT * FROM customers ORDER BY balance DESC;
-
+```
+SELECT * FROM customers ORDER BY balance;
+SELECT * FROM customers ORDER BY balance DESC;
+```
 
 ### How to Update Table Data
 ```
@@ -172,11 +199,13 @@ Important Note: Always Write Where Condition.
 - Update balance to 0 WHERE id = 4 FROM bank database customers table;
 
 ### Add Column to Table
-- ALTER TABLE tablename ADD COLUMN  columnname datatype;
-- ALTER TABLE customers ADD COLUMN description varchar(100);
+```
+ALTER TABLE tablename ADD COLUMN  columnname datatype;
+ALTER TABLE customers ADD COLUMN description varchar(100);
+```
 
 ### How to DELETE Data
- ```
+```
 DELETE FROM table WHERE condition;
 ```
 Important Note: Always Write Where Condition.
