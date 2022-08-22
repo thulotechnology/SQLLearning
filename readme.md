@@ -213,6 +213,12 @@ description TEXT
 
 ```
 
-
-
+### Insert Data To Customers
+```
+INSERT INTO customers(name, address, phone, income, description) VALUES ('Kalpana Shrestha', 'USA', 15455454, 65000,'');
+INSERT INTO customers(name, address, phone, income, description) VALUES ('Neetu Mulmi', 'USA', 123232323, 75000,'');
+INSERT INTO customers(name, address, phone, income, description) VALUES ('Axana Chhetri', 'USA', 154554547, 65000,'');
+INSERT INTO customers(name, address, phone, income, description) VALUES ('Kala Bhusal', 'USA', 154455454, 65000,'');
+INSERT INTO customers(name, address, phone, income, description) VALUES ('Sudeep Baniya', 'USA', 158455454, 65000,'');
+```
 
