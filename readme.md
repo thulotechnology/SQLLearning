@@ -150,4 +150,52 @@ age int
 
 - SELECT country, COUNT(*) FROM person GROUP BY country;
 
+### ORDER BY
+It is used to sort data in ascending / decending order.
+- SELECT * FROM customers ORDER BY balance;
+- SELECT * FROM customers ORDER BY balance DESC;
+
+
+### How to Update Table Data
+Syntax: UPDATE tablename SET col1='val1', col2 = 'val2', col3 = 'val3' WHERE id = id;
+Important Note: Always Write Where Condition.
+- If you don't write where condition all data will be updated.
+- UPDATE customers SET name = 'Milan' WHERE id = 2;
+- UPDATE customers SET name = 'Raj', balance = 5000 WHERE id =5;
+
+### TASK
+- Update balance to 0 WHERE id = 4 FROM bank database customers table;
+
+### Add Column to Table
+- ALTER TABLE tablename ADD COLUMN  columnname datatype;
+- ALTER TABLE customers ADD COLUMN description varchar(100);
+
+### How to DELETE Data
+Syntax: DELETE FROM table WHERE condition;
+Important Note: Always Write Where Condition.
+- DELETE FROM person WHERE id = 7;
+
+### TASK
+- Delete from customers where id = 5;
+
+
+### AND OR NOT
+AND - and
+OR - or
+NOT - ! or <>
+
+
+### Encryption
+- Making infromation that can't be understood by other users.
+
+### Decryption
+- Getting Original information from encrypted value.
+
+
+### Create Database salesforce
+```
+CREATE DATABASE salesforce;
+```
+
+
 
