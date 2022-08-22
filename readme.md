@@ -145,7 +145,10 @@ age int
 - E.g DROP TABLE customer;
 
 ### How to Insert Data Into Table
-- INSERT INTO tablename(column1, column2, column3) VALUES ('val', 'val2', 'val3');
+```
+INSERT INTO tablename(column1, column2, column3) VALUES ('val', 'val2', 'val3');
+```
+
 - E.g. INSERT INTO customers(name, balance) VALUES ('Raj', 5002.6);
 
 - SELECT country, COUNT(*) FROM person GROUP BY country;
