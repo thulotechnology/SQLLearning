@@ -200,13 +200,19 @@ Important Note: Always Write Where Condition.
 
 ### Add Column to Table
 ```
-ALTER TABLE tablename ADD COLUMN  columnname datatype;
+ALTER TABLE tablename ADD COLUMN columnname datatype;
 ALTER TABLE customers ADD COLUMN description varchar(100);
 ```
 
 ### Delete Column to Table
 ```
-ALTER TABLE tablename DROP COLUMN  columnname;
+ALTER TABLE tablename DROP COLUMN columnname;
+```
+
+### Rename Column of Table
+```
+ALTER TABLE tablename CHANGE oldcolumnname newcolumnname datatype;
+ALTER TABLE customers CHANGE phones phone bigint;
 ```
 
 ### How to DELETE Data
