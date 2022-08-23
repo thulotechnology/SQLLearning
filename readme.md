@@ -332,3 +332,23 @@ SELECT name AS 'Name', address AS 'Address' FROM customers;
 - Insert 10 data
 - Show all data
 [7 Min]
+
+
+### Join
+- It is the process of joining two or more tables.
+
+### Contact Example With Join
+```
+CREATE DATABASE mycontactbook;
+CREATE TABLE users(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE phones(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    userid int NOT NULL,
+    phone bigint,
+    FOREIGN KEY(userid) REFERENCES users(id)
+);
+```
