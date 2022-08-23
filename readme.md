@@ -351,4 +351,56 @@ CREATE TABLE phones(
     phone bigint,
     FOREIGN KEY(userid) REFERENCES users(id)
 );
+SELECT users.name, phones.phone FROM users JOIN phones ON users.id = phones.userid;
+
+```
+
+### LIKE IN SQL
+LIKE is used to search data.
+
+WHERE name LIKE 'a%' - Find all names that start with a
+WHERE name LIKE '%a' - Find all names that end with a
+WHERE name LIKE '%he%' - Find all names that has he on any position
+WHERE name LIKE '_r%' - Find any value that has r in second position
+WHERE name LIKE 'h___' - Find names that starts with h and has 4 character length.
+WHERE name LIKE 's%a' - Find names that starts with s and end with a
+
+```
+SELECT * FROM users WHERE name LIKE 's%';
+```
+
+### TASK
+- FIND ALL CONTACTS THAT START WITH sa
+- FIND ALL CONTACTS HAVING ur on any position
+- FIND NAME THAT start with a and end with a
+
+
+### DDL
+- Data Defination Language [CREATE, DROP, ALTER]
+
+### DML
+- Data Manipulation Language [INSERT, UPDATE, DELETE]
+
+
+```
+CREATE DATABASE facebook;
+
+CREATE TABLE posts(
+id int AUTO_INCREMENT PRIMARY KEY,
+title VARCHAR(100),
+dates date,
+username VARCHAR(100)    
+);
+
+CREATE TABLE comments(
+id int AUTO_INCREMENT PRIMARY KEY,
+postid int NOT NULL,
+dates date,
+username VARCHAR(100),
+cmt VARCHAR(255),
+FOREIGN KEY(postid) REFERENCES posts(id) 
+)
+
+SELECT posts.username AS 'Post Written By', posts.title, comments.cmt, comments.username AS 'Comment By' FROM posts RIGHT JOIN comments ON posts.id = comments.postid;
+
 ```
