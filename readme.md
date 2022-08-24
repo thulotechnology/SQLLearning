@@ -457,3 +457,50 @@ INSERT INTO comments(userid, postid, cmt, dates) VALUES (2,1,'Thank you','2022-0
 INSERT INTO comments(userid, postid, cmt, dates) VALUES (3,1,'Book is good','2022-08-24');
 INSERT INTO comments(userid, postid, cmt, dates) VALUES (2,3,'For Automation?','2022-08-24');
 ```
+
+### Task on Query
+```sql
+-- To view username and posts
+SELECT users.name, posts.post FROM users JOIN posts on users.id = posts.userid;
+
+-- To view individual post/s
+SELECT users.name, posts.post FROM users JOIN posts on users.id = posts.userid WHERE users.id = 2;
+
+-- To View intersection
+SELECT posts.post AS "Post", users.name AS "Post By:", comments.cmt AS "Comment" FROM users JOIN posts ON users.id = posts.userid JOIN comments ON posts.userid = comments.userid;
+
+-- To View Comments By Post
+SELECT comments.cmt, users.username FROM comments JOIN users ON comments.userid = users.id WHERE postid = 1;
+
+
+```
+
+### To Create View
+```
+CREATE VIEW viewname AS <sql query>;
+```
+
+### To Display Data From View
+```
+SELECT * FROM viewname;
+```
+
+### TASK
+CREATE VIEW TO SHOW ALL USERS
+
+
+
+### Store Procedure
+
+```sql
+DELIMITER $$
+
+CREATE PROCEDURE GetAllUsers(IN userid int)
+BEGIN
+	SELECT * FROM users WHERE id=userid;    
+END$$
+DELIMITER ;
+```
+
+### TASK
+CREATE PROCEDURE to view post by its id;
