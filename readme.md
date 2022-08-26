@@ -136,20 +136,26 @@ INSERT INTO tablename(column1, column2, column3...) VALUES ('value1', 'value2', 
 INSERT INTO patients(name, phone, disease, age) VALUES ('Milan', 980545, 'covid',29);
 ```
 
-
-### SQL WITH DATA
-
 ### TO View All Data
+```sql
+SELECT * FROM tablename;
 ```
-- SELECT * FROM tablename;
-- E.g SELECT * FROM person;
-```
+### E.g
 
+```sql
+SELECT * FROM person;
+```
 ### To View All Data With Condition
 ```
 SELECT * FROM tablename WHERE condition;
 E.g SELECT * FROM person WHERE country = 'USA';
 ```
+
+### Work
+- Create Database school.
+- Create Table students with column [id, name, adddress, phone].
+- Insert 5 students.
+- Display all students.
 
 ## Find Max / Min / Avg / Count Value [Must Be Numeric Value]
 ```
