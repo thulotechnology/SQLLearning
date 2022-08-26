@@ -113,6 +113,18 @@ age int
 );
 ```
 
+### To Create Table Patients 
+Columns: id, name, phone, disease, age
+```sql
+CREATE TABLE patients(
+id int PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(100),
+phone int,
+disease VARCHAR(100),
+age int    
+);
+```
+
 ### SQL WITH DATA
 
 ### TO View All Data
