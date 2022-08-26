@@ -40,8 +40,8 @@ CREATE DATABASE databasename;
 DROP DATABASE databasename;
 ```
 
-### How to View Database
-```
+### How to View All Database
+```sql
 SHOW DATABASES;
 ```
 
