@@ -54,21 +54,21 @@ USE DatabaseName;
 ### WRITE SQL Query to Create and Delete Database called "school."
 
 ### TO Create:
-```
+```sql
 CREATE DATABASE school;
 ```
 
 ### To Delete:
-```
+```sql
 DROP DATABASE school;
 ```
 
 ### To View All Databases
-```
+```sql
 SHOW DATABASES;
 ```
 ### To Use Database
-```
+```sql
 USE DatabaseName;
 ```
 
@@ -93,15 +93,15 @@ at the same time.
 ### How to Create Table
 Syntax:
 
-```
-CREATE TABLE TABLENAME(
+```sql
+CREATE TABLE tablename(
 colname datatype,
 colname datatype,
 colname datatype
 );
 ```
 
-```
+```sql
 CREATE TABLE person(
 id int PRIMARY KEY AUTO_INCREMENT,
 name VARCHAR(100),
