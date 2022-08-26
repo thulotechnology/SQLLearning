@@ -4,7 +4,7 @@ Database stores data in organized way.
 ### Types
 - SQL: Structured Query Language. It store data in table. E.g: MySQL, MSSQL, Postgres, Oracle, MS Access
  
-- NO SQL: Mongo DB....
+- NO SQL: Mongo DB, Cassandra, etc.
 
 ### SQL
 Structured Query Language, standard language for database.
@@ -31,13 +31,13 @@ Note: SQL is not case sensitive. A and a are same.
 3. Start Mysql and Apache.
 
 ### How to Create Database
-```
-- CREATE DATABASE DatabaseName;
+```sql
+CREATE DATABASE databasename;
 ```
 
 ### How to Delete Database
-```
-DROP DATABASE DatabaseName;
+```sql
+DROP DATABASE databasename;
 ```
 
 ### How to View Database
