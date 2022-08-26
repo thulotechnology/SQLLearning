@@ -125,6 +125,18 @@ age int
 );
 ```
 
+
+### How to Insert Data In Table
+```sql
+INSERT INTO tablename(column1, column2, column3...) VALUES ('value1', 'value2', 'value3',...);
+```
+
+### Example
+```sql
+INSERT INTO patients(name, phone, disease, age) VALUES ('Milan', 980545, 'covid',29);
+```
+
+
 ### SQL WITH DATA
 
 ### TO View All Data
