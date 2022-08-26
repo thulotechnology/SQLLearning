@@ -46,7 +46,8 @@ SHOW DATABASES;
 ```
 
 ### How to Use Database
-```
+It is used to select or change database.
+```sql
 USE DatabaseName;
 ```
 
