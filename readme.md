@@ -504,3 +504,33 @@ DELIMITER ;
 
 ### TASK
 CREATE PROCEDURE to view post by its id;
+
+
+### Datetime in SQL
+To View Datetime
+```sql
+SELECT NOW();
+```
+
+### To View Date
+```sql
+SELECT CURRENT_DATE();
+```
+
+### To View Date
+```sql
+SELECT CURRENT_TIME();
+```
+
+### Find Difference Between Dates
+```sql
+SELECT DATEDIFF('2022-08-25','2022-08-23');
+```
+
+```sql
+SELECT id, name, FLOOR(DATEDIFF(CURRENT_DATE(), birthdate)/365) AS age FROM users;
+```
+
+### TASK
+- Add Column dob to users table
+- Find age of users
